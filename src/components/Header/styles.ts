@@ -5,6 +5,8 @@ export const Container = styled.header `
     background: #16425B;
 
     margin: 0;
+
+    
 `;
 
 
@@ -25,7 +27,7 @@ export const Content = styled.div `
         height: 4rem;
         width: 8rem;
 
-        margin-left: 0.7rem;
+        
     }
 
 
@@ -38,7 +40,7 @@ export const Content = styled.div `
     a {
             padding: 0 1rem;
             text-decoration: none;
-            font-size: 0.65rem;
+            font-size: 0.75rem;
             color: #FFF;
             border: 0;
             border-radius: 0.25rem;

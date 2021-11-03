@@ -38,16 +38,21 @@ export const HomeIntro = styled.div `
 
     button {
 
-        padding: 1rem 10rem;
+        width: 15rem;
+        height:3rem;
+
+        
         background: #F28118;
         border-radius: 5px;
         color: #FFF;
         border: none;
 
+        
         transition: filter 0.2s;
 
         &:hover {
         filter: brightness(0.8);
+        cursor: pointer;
         }
 
     }

@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div `
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    //display: block;
+    //justify-content: center;
+    //align-items: center;
 
     button.register {
         position:fixed;
@@ -26,16 +25,19 @@ export const Container = styled.div `
         cursor: pointer;
         }
     }
-
 `;
 
-export const ProductIntro = styled.div `
+export const PromoIntro = styled.div `
 
-    display: block;
-    justify-content: center;
-    align-items: center;
+    //display: block;
+    //margin-left: 38%;
+    //margin-right: 50%;
+    display: table;
+    margin: 0 auto;
+    
 
     margin-top: 5rem;
+    margin-bottom: 5rem;
 
     h1{
         margin-left: 7rem;
@@ -76,7 +78,18 @@ export const ProductIntro = styled.div `
     }
 `;
 
-export const ProductTable = styled.div `
+export const PromoDisplay = styled.div `
+
+    width: 70%;
+    //height: 100%;
+
+    margin: 0 auto;
+    margin-bottom: 5rem;
 
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    justify-items: center;
 `;
+

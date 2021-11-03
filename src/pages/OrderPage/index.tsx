@@ -1,13 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { Container, ProductIntro, ProductTable } from './styles'
+import { Container, ProductIntro, ProductTable   } from './styles'
 
-export default function ProductsPage() {
+export default function OrderPage() {
     return (
-       <Container>
+        <Container>
            
             <ProductIntro>
-                <h1>Produtos</h1>
+                <h1>Pedidos</h1>
 
                 <input type='text' placeholder='Busque Aqui...' />
                 <br/>
@@ -20,9 +19,7 @@ export default function ProductsPage() {
 
             </ProductTable>
 
-            <Link to='/products/newproduct'>
             <button type='submit' className ="register">+ Cadastrar</button>
-            </Link>
 
        </Container>
     )

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div `
 
     display: flex;
@@ -23,7 +22,6 @@ export const Container = styled.div `
 
         &:hover {
         filter: brightness(0.8);
-        cursor: pointer;
         }
     }
 
@@ -55,7 +53,7 @@ export const ProductIntro = styled.div `
 
     button {
         margin-top: 2rem;
-        //margin-left: 7.5rem;
+        //margin-left: 4rem;
 
         width: 25rem;
         height: 2rem;
