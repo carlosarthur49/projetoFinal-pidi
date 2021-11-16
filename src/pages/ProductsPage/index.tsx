@@ -21,7 +21,7 @@ export default function ProductsPage() {
             </ProductTable>
 
             <Link to='/products/newproduct'>
-            <button type='submit' className ="register">+ Cadastrar</button>
+                <button type='button' className ="register">+ Cadastrar</button>
             </Link>
 
        </Container>

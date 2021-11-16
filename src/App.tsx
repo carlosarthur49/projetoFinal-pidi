@@ -13,6 +13,8 @@ import ReportPage from './pages/ReportPage';
 import CreateAccountPage from './pages/CreateAccountPage';
 import SalesPage from './pages/SalesPage';
 import Footer from './components/Footer';
+import NewPromotionPage from './pages/NewPromotionPage';
+import NewOrderPage from './pages/NewOrderPage';
 
 export function App() {
   return (
@@ -27,11 +29,13 @@ export function App() {
           <Route path="/products" exact component={ProductsPage}/>
           <Route path="/login" component={LoginPage}/>
           <Route path="/promotions" component={PromotionsPage}/>
-          <Route path="/order" component={OrderPage}/>
+          <Route path="/order" exact component={OrderPage}/>
           <Route path="/report" component={ReportPage}/>
           <Route path="/sign-in" component={CreateAccountPage}/>
           <Route path="/sales" component={SalesPage}/>
           <Route path="/products/newproduct" component={NewProductPage}/>
+          <Route path="/promotion/newpromotion" component={NewPromotionPage} />
+          <Route path="/order/neworder" component={NewOrderPage} />
         </Switch>
 
         <Footer/>

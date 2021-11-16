@@ -18,6 +18,8 @@ export const Container = styled.div `
         border-radius: 5px;
         color: #FFFF;
         background: #F28118;
+
+        cursor:pointer;
         transition: filter 0.2s;
 
         &:hover {

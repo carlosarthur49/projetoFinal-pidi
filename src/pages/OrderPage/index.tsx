@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Container, ProductIntro, ProductTable   } from './styles'
 
 export default function OrderPage() {
@@ -19,8 +20,9 @@ export default function OrderPage() {
 
             </ProductTable>
 
-            <button type='submit' className ="register">+ Cadastrar</button>
-
+            <Link to='/order/neworder'>
+                <button type='button' className ="register">+ Cadastrar</button>
+            </Link>
        </Container>
     )
 }

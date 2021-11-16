@@ -13,8 +13,12 @@ export default function NewProductPage() {
     const [colection, setColection] = useState('');
     const [date, setDate] = useState('');
     const [value, setValue] = useState(0);
-    //const [quantity, setQuantity] = useState(0);
-    //const [color, setColor] = useState('');
+    const [qtdPP, setQtdPP] = useState(0);
+    const [qtdP, setQtdP] = useState(0);
+    const [qtdM, setQtdM] = useState(0);
+    const [qtdG, setQtdG] = useState(0);
+    const [qtdGG, setQtdGG] = useState(0);
+    
    
 
     function handleCreateNewProduct(event: FormEvent) {
@@ -25,7 +29,12 @@ export default function NewProductPage() {
             name,
             colection,
             date,
-            value
+            value,
+            qtdPP,
+            qtdP,
+            qtdM,
+            qtdG,
+            qtdGG
         });
     }
 
@@ -72,13 +81,54 @@ export default function NewProductPage() {
 
                         <p>Quantidade/Tamanho</p>
                         <label>
-                            PP: <strong>10</strong>
+                            PP: <input 
+                            className='size-qtd' 
+                            type="number" 
+                            value={qtdPP}
+                            onChange={event => setQtdPP(Number(event.target.value))}
+                            />
                         </label>
 
-                        <p>Cor:</p>
+                        <label>
+                            P: <input 
+                            className='size-qtd' 
+                            type="number"
+                            value={qtdP}
+                            onChange={event => setQtdP(Number(event.target.value))} 
+                            />
+                        </label>
+
+                        <label>
+                            M: <input 
+                            className='size-qtd' 
+                            type="number"
+                            value={qtdM}
+                            onChange={event => setQtdM(Number(event.target.value))} 
+                            />
+                        </label>
+
+                        <label>
+                            G: <input 
+                            className='size-qtd' 
+                            type="number"
+                            value={qtdG}
+                            onChange={event => setQtdG(Number(event.target.value))} 
+                            />
+                        </label>
+
+                        <label>
+                            GG: <input 
+                            className='size-qtd' 
+                            type="number"
+                            value={qtdGG}
+                            onChange={event => setQtdGG(Number(event.target.value))} 
+                            />
+                        </label>
+
 
                         <p>Valor:</p>
-                        <input 
+                        <input
+                        //id='value-input' 
                         type="number" 
                         value={value}
                         onChange={event => setValue(Number(event.target.value))}
@@ -87,7 +137,8 @@ export default function NewProductPage() {
 
                     <ImageSection>
                         <p>Imagem:</p>
-                        <input type="image" alt="Imagem do Produto"/>
+                        <input id="image-input" type="image" alt="Imagem do Produto"/>
+                        
                     </ImageSection>
 
                 </FormProductBlock>

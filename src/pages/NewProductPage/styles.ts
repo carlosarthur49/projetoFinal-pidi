@@ -29,6 +29,7 @@ export const Form = styled.form `
     h3{
             margin-top: -2rem;
             margin-bottom: 2rem;
+            font-size: 1.5rem;
         }    
 
     text-align: center;
@@ -59,14 +60,18 @@ export const  FormProductBlock = styled.div `
 export const MainSection = styled.div `
 
     margin-right: 2rem;
+    padding: 2rem;
+
 
     input {
+        margin-top: 0.3rem;
         width: 20rem;
         height: 1.8rem;
 
         border-radius: 5px;
     }
     select {
+        margin-top: 0.5rem;
         width: 20rem;
         height: 1.8rem;
 
@@ -74,11 +79,36 @@ export const MainSection = styled.div `
     }
 
     p {
+        margin-top: 1rem;
         margin-left: 0;
         
     }
+
+    input.size-qtd {
+        width: 2.7rem;
+        height: 1.4rem;
+
+        margin-left:-0.1rem;
+    }
+
+   
 `;
 
 export const ImageSection = styled.div `
     margin-right: 2rem;
+    margin-top: 3rem;
+
+    width: 18rem;
+    height: 25rem;
+
+    background: #F28118;
+    border-radius: 5px;
+
+    p {
+        margin-top: 1rem
+    }
+
+    input#image-input {
+        margin-top: 10rem;
+    }
 `;
