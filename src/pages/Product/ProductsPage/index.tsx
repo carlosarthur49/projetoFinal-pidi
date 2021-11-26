@@ -17,8 +17,9 @@ export default function ProductsPage() {
                 <button type='submit'>Consultar</button>
 
             </ProductIntro>
-            
+             
             <ProductTable>
+                
                 {/* <table style={tableCustom}>
                     <thead>  
                         <th>Imagem</th>
