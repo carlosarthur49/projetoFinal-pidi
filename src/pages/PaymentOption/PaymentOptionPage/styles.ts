@@ -94,6 +94,11 @@ export const PaymentTable = styled.div `
 
   td{
       max-width: 60px;
+      text-align: center;
+  }
+
+  th{
+      text-align: center;
   }
 
   #deleteButton{

@@ -25,19 +25,19 @@ export default function ProductsPage() {
                 <Table bordered hover responsive >
                     <thead>
                         <tr>
-                            <th>
+                            <th id="imageColumn">
                                 Imagem
                             </th>
-                            <th>
+                            <th id="productColumn">
                                 Produto
                             </th>
-                            <th>
+                            <th id="promotionColumn">
                                 Promoção
                             </th>
-                            <th>
+                            <th id="valueColumn">
                                 Valor
                             </th>
-                            <th>
+                            <th id="actionColumn">
                                 Ações
                             </th>
                         </tr>

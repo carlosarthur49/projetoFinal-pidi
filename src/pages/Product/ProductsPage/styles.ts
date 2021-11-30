@@ -97,6 +97,31 @@ export const ProductTable = styled.div `
 
   td{
       max-width: 60px;
+      text-align: center;
+  }
+
+  th{
+      text-align: center;
+  }
+
+  #imageColumn{
+      width: 15rem;
+  }
+
+  #productColumn{
+      width: 20rem;
+  }
+
+  #promotionColumn{
+      width: 10rem;
+  }
+
+  #valueColumn{
+      width: 7rem;
+  }
+
+  #actionColumn{
+      width: 10rem;
   }
 
   #updateButton{

@@ -96,6 +96,11 @@ export const UserTable = styled.div `
 
   td{
       max-width: 40px;
+      text-align: center;
+  }
+
+  th{
+      text-align: center;
   }
 
   #updateButton{

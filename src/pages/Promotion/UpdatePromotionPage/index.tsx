@@ -8,7 +8,7 @@ export default function UpdatePromotionPage() {
         <Container>
 
             <Form>
-                <h3>Nova Promoção</h3>
+                <h3>Alterar Promoção</h3>
                 <FormBlock>
                     <MainSection>
 
@@ -17,12 +17,11 @@ export default function UpdatePromotionPage() {
 
                         <p>Inicio da Promoção:</p>
                         <input type="date" />
+                        
+                    </MainSection>
 
-
-                        <p>Fim da Promoção</p>
-                        <input type="date" />
-
-                        <p>Desconto</p>
+                    <AddProductSection>
+                    <p>Desconto</p>
                         <select >
                             <option value="70">70% OFF</option>
                             <option value="60">60% OFF</option>
@@ -31,20 +30,14 @@ export default function UpdatePromotionPage() {
                             <option value="20">20% OFF</option>
                             <option value="10">10% OFF</option>
                         </select>
-                    </MainSection>
 
-                    <AddProductSection>
-                        <h5>Incluir Produtos:</h5>
-
-                        <p>Nome do Produto:</p>
-                        <input type="text" />
-                        <br />
-                        <button id="AddProduct-btn" type="submit" >Consultar</button>
+                        <p>Fim da Promoção</p>
+                        <input type="date" />
                     </AddProductSection>
                     <br />               
                 </FormBlock>
 
-                <Link to="/promotions"><button id="buttonCancel" type="reset">Cancelar</button></Link>  <button id="form-btn" type="submit" >Cadastrar</button>
+                <Link to="/promotions"><button id="buttonCancel" type="reset">Cancelar</button></Link>  <button id="form-btn" type="submit" >Alterar</button>
 
             </Form>
 

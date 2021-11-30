@@ -18,11 +18,11 @@ export default function NewPromotionPage() {
                         <p>Inicio da Promoção:</p>
                         <input type="date" />
 
+                    </MainSection>
 
-                        <p>Fim da Promoção</p>
-                        <input type="date" />
+                    <AddProductSection>
 
-                        <p>Desconto</p>
+                    <p>Desconto</p>
                         <select >
                             <option value="70">70% OFF</option>
                             <option value="60">60% OFF</option>
@@ -31,15 +31,15 @@ export default function NewPromotionPage() {
                             <option value="20">20% OFF</option>
                             <option value="10">10% OFF</option>
                         </select>
-                    </MainSection>
-
-                    <AddProductSection>
-                        <h5>Incluir Produtos:</h5>
+                        
+                    <p>Fim da Promoção</p>
+                        <input type="date" />
+                        {/* <h5>Incluir Produtos:</h5>
 
                         <p>Nome do Produto:</p>
                         <input type="text" />
                         <br />
-                        <button id="AddProduct-btn" type="submit" >Consultar</button>
+                        <button id="AddProduct-btn" type="submit" >Consultar</button> */}
                     </AddProductSection>
                     <br />               
                 </FormBlock>

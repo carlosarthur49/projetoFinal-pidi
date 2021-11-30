@@ -22,12 +22,12 @@ export const Form = styled.form `
 
     text-align: center;
 
-    margin-top: 5rem;
+    margin-top: 10rem;
     background: #16425B;
     color: #fff;
 
     width: 50rem;
-    height: 37rem;
+    height: 28rem;
 
     border-radius: 5px;
 
@@ -89,6 +89,7 @@ export const MainSection = styled.section `
 
 
 export const AddProductSection = styled.section `
+    margin-top: 3rem;
     margin-left: 2rem;
     
 

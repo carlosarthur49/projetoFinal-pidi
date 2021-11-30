@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from './styles';
+import { Link } from 'react-router-dom';
 import { TiTrash, TiPencil, TiDocumentText } from "react-icons/ti";
 
 export default function Promotion() {
@@ -12,7 +13,7 @@ export default function Promotion() {
             <p>Lorem ipsum dolor sit amet. Non nulla possimus et earum quidem hic quas reiciendis</p>
             <p className="discount">40% OFF</p>
             
-            <TiPencil style={editIcon}/> <TiDocumentText style={showIcon}/> <TiTrash style={deleteIcon}/> 
+            <Link to='/promotion/updatepromotion'><TiPencil style={editIcon}/></Link> <TiDocumentText style={showIcon}/> <TiTrash style={deleteIcon}/> 
         </Container>
     )
 }
