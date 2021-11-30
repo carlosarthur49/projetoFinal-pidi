@@ -7,12 +7,9 @@ import {
     ImageSection, 
     FormProductBlock } from './styles';
 
-export default function NewProductPage() {
+export default function UpdateProductPage() {
 
-    const [type, setType] = useState('');
-    const [name, setName] = useState('');
-    const [colection, setColection] = useState('');
-    const [date, setDate] = useState('');
+   
     const [value, setValue] = useState(0);
     const [qtdPP, setQtdPP] = useState(0);
     const [qtdP, setQtdP] = useState(0);
@@ -26,10 +23,7 @@ export default function NewProductPage() {
         event.preventDefault();
 
         console.log({
-            type,
-            name,
-            colection,
-            date,
+
             value,
             qtdPP,
             qtdP,
@@ -43,42 +37,10 @@ export default function NewProductPage() {
     return (
         <Container>
             <Form>
-                <h3>Novo Produto</h3>
+                <h3>Alterar Produto</h3>
 
                 <FormProductBlock>
                     <MainSection>
-                        <p>Tipo de Produto:</p>
-                        <select value={type} onChange={event => setType(event.target.value)}>
-                            <option value="Camisa">Camisa</option>
-                            <option value="Boné">Boné</option>
-                            <option value="Casaco">Casaco</option>
-                            <option value="Caneca">Caneca</option>
-                            <option value="Chaveiro">Chaveiro</option>
-                            <option value="Garrafa">Garrafa</option>
-                            <option value="Action Figure">Action Figure</option>
-                        </select>
-
-                        <p>Nome do Produto:</p>
-                        <input 
-                        type="text" 
-                        placeholder="Nome do Produto" 
-                        value={name}
-                        onChange={event => setName(event.target.value)}
-                        />
-
-                        <p>Coleção:</p>
-                        <input 
-                        type="text" 
-                        value={colection}
-                        onChange={event => setColection(event.target.value)}
-                        />
-
-                        <p>Data do Cadastro: </p>
-                        <input 
-                        type="date" 
-                        value={date}
-                        onChange={event =>setDate(event.target.value)}
-                        />
 
                         <p>Quantidade/Tamanho</p>
                         <label>
@@ -144,7 +106,7 @@ export default function NewProductPage() {
 
                 </FormProductBlock>
                 <br/>
-                <Link to="/products"><button id="buttonCancel" type="reset">Cancelar</button></Link> <button id="buttonRegister" type="submit" onClick={handleCreateNewProduct}>Cadastrar</button>
+                <Link to="/products"><button id="buttonCancel" type="reset">Cancelar</button></Link> <button id="buttonRegister" type="submit" onClick={handleCreateNewProduct}>Alterar</button>
             </Form>
         </Container>
     )

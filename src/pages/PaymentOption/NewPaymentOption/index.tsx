@@ -1,4 +1,5 @@
 import React, { FormEvent, useState } from 'react'
+import { Link } from 'react-router-dom';
 import { 
     Container,
     Form, 
@@ -87,7 +88,7 @@ export default function NewPaymentOption() {
                 </FormPaymentBlock>
                 
                 <br/>
-                <button id="buttonCancel" type="reset">Cancelar</button> <button id="buttonRegister" type="submit" onClick={handleCreateNewPaymentOption}>Cadastrar</button>
+                <Link to='/paymentoption'> <button id="buttonCancel" type="reset">Cancelar</button></Link> <button id="buttonRegister" type="submit" onClick={handleCreateNewPaymentOption}>Cadastrar</button>
             </Form>
         </Container>
     )

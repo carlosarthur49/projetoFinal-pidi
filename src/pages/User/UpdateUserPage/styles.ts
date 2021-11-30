@@ -27,7 +27,7 @@ export const Form = styled.form `
     color: #fff;
 
     width: 50rem;
-    height: 47rem;
+    height: 35rem;
 
     border-radius: 5px;
 

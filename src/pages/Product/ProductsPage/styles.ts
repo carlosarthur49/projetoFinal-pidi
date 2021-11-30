@@ -3,10 +3,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div `
 
-    display: flex;
+    display: block; 
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     width: 100%;
+    
 
     button.register {
         position:fixed;
@@ -36,6 +37,7 @@ export const ProductIntro = styled.div `
     justify-content: center;
     align-items: center;
 
+    margin-left: 47rem;
     margin-top: 5rem;
 
     h1{
@@ -79,10 +81,31 @@ export const ProductIntro = styled.div `
 
 export const ProductTable = styled.div `
 
-    display: block;
+    
     justify-content: center;
     align-items: center;
+    margin-top: 8rem;
+    
+   
+    
+  table{
+      border: 5px solid;
+      width: 60%;
+      margin-left: 25rem;
+      
+  }
 
-    margin-top: 5rem;
+  td{
+      max-width: 60px;
+  }
+
+  #updateButton{
+      background-color: blue;
+  }
+
+  #deleteButton{
+      background-color: red;
+  }
+   
 
 `;

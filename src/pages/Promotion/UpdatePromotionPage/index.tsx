@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Container,Form, MainSection, AddProductSection, FormBlock } from './styles'
 
-export default function NewPromotionPage() {
+export default function UpdatePromotionPage() {
     return (
         <Container>
 

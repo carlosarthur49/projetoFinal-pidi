@@ -1,4 +1,5 @@
 import React, { FormEvent, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import { 
     Container,
@@ -131,7 +132,7 @@ export default function NewUserPage() {
                         value={confirmedPassword} 
                         onChange={event =>setconfirmedPassword(event.target.value)}/>
                 <br />
-                <button id="form-btn" type="submit" onClick={handleCreateNewUser} >Cadastrar</button>
+                <Link to='/users'><button id="buttonCancel" type="reset">Cancelar</button></Link> <button id="form-btn" type="submit" onClick={handleCreateNewUser} >Cadastrar</button>
 
             </Form>
 

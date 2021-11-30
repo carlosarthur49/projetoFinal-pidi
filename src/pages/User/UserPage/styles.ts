@@ -3,9 +3,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div `
 
-    display: flex;
+    display: block; 
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    width: 100%;
+
 
     button.register {
         position:fixed;
@@ -35,6 +37,7 @@ export const UserIntro = styled.div `
     justify-content: center;
     align-items: center;
 
+    margin-left: 47rem;
     margin-top: 5rem;
 
     h1{
@@ -78,5 +81,55 @@ export const UserIntro = styled.div `
 
 export const UserTable = styled.div `
 
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    
+   
+    
+    table{
+      border: 5px solid;
+      width: 70%;
+      margin-left: 20rem;
+      
+  }
 
+  td{
+      max-width: 40px;
+  }
+
+  #updateButton{
+      background-color: blue;
+  }
+
+  #deleteButton{
+      background-color: red;
+  }
+  
+  #cpfColumn{
+      width: 10rem;
+  }
+
+  #nomeColumn{
+      width: 18rem;
+  }
+
+  #loginColumn{
+      width: 12rem;
+  }
+
+  #telefoneColumn{
+      width: 10rem;
+  }
+
+  #dateColumn{
+      width: 12rem;
+  }
+
+  #actionsColumn{
+      width: 10rem;
+  }
+
+
+   
 `;

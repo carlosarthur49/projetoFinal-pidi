@@ -18,6 +18,8 @@ import NewOrderPage from './pages/Order/NewOrderPage';
 import NewUserPage from './pages/User/NewUserPage';
 import PaymentOption from './pages/PaymentOption/PaymentOptionPage';
 import NewPaymentOption from './pages/PaymentOption/NewPaymentOption';
+import UpdateUserPage from './pages/User/UpdateUserPage';
+import UpdateProductPage from './pages/Product/UpdateProductPage';
 
 export function App() {
   return (
@@ -42,6 +44,9 @@ export function App() {
           <Route path="/promotion/newpromotion" component={NewPromotionPage} />
           <Route path="/order/neworder" component={NewOrderPage} />
           <Route path="/users/newuser" component={NewUserPage}/>
+          <Route path="/users/updateuser" component={UpdateUserPage}/>
+          <Route path="/products/updateproduct" component={UpdateProductPage}/>
+          <Route path="/promotions/updatepromotions" component={UpdateProductPage}/>
         </Switch>
 
         <Footer/>

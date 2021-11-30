@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 export const Container = styled.div `
 
-    display: flex;
+    display: block; 
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    width: 100%;
 
     button.register {
         position:fixed;
@@ -34,10 +35,11 @@ export const PaymentIntro = styled.div `
     justify-content: center;
     align-items: center;
 
+    margin-left: 47rem;
     margin-top: 5rem;
 
     h1{
-        margin-left: 1rem;
+        margin-left: -2rem;
         
     }
 
@@ -75,7 +77,27 @@ export const PaymentIntro = styled.div `
     }
 `;
 
-export const ProductTable = styled.div `
+export const PaymentTable = styled.div `
 
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    
+   
+    
+    table{
+      border: 5px solid;
+      width: 60%;
+      margin-left: 25rem;
+      
+  }
 
+  td{
+      max-width: 60px;
+  }
+
+  #deleteButton{
+      background-color: red;
+      margin-left: 1rem;
+  }
 `;
